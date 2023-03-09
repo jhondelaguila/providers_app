@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if providers %}
+        <table id="providers" class="table table-striped">
+            <thead>
+            <tr>
+                <th>Nombre del Proveedor</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for provider in providers %}
+                <tr>
+                    <td>{{ provider.name }}</td>
+                    <td>
+                        <a href="/provider/{{ provider.id }}" class="btn btn-dark">Mostrar</a>
+                        <a href="/provider/edit/{{ provider.id }}" class="btn btn-light">Editar</a>
+                        <a href="/provider/delete/{{ provider.id }}" class="btn btn-danger delete-article">Borrar</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No hay proveedores para mostrar</p>
+    {% endif %}
+{% endblock %}
