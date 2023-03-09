@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ provider.name }}</h1>
+    <p>Email: {{ provider.email }}</p>
+    <p>Teléfono: {{ provider.phone }}</p>
+    <p>Tipo: {{ provider.type }}</p>
+    {% if provider.active == 0 %}
+        <p>Activo: No</p>
+    {% else %}
+        <p>Activo: Si</p>
+    {% endif %}
+    <p>Fecha de creación: {{ provider.date_created }}</p>
+    <p>Última actualización: {{ provider.last_update }}</p>
+    <hr>
+    <a href="/">Atrás</a>
+{% endblock %}
