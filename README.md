@@ -3,6 +3,6 @@ Aplicación donde se puede crear, editar y eliminar proveedores de una base de d
 
 Antes de probar el proyecto cree la base de datos y las migraciones correspondientes con los siguientes comandos:
 
-`````php bin/console doctrine:database:create`````
-`````php bin/console doctrine:migrations:diff`````
-`````php bin/console doctrine:migrations:migrate`````
+```php bin/console doctrine:database:create```
+```php bin/console doctrine:migrations:diff```
+```php bin/console doctrine:migrations:migrate```
