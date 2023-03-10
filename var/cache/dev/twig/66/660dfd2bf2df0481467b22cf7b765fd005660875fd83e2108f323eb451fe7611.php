@@ -191,6 +191,6 @@ class __TwigTemplate_51bba9a11ae5609eba3a90625d90887a12e98117adf7c847e427480d1dc
     {% else %}
         <p>No hay proveedores para mostrar</p>
     {% endif %}
-{% endblock %}", "provider/index.html.twig", "C:\\Users\\JHON PC\\Documents\\providers-app\\templates\\provider\\index.html.twig");
+{% endblock %}", "provider/index.html.twig", "C:\\Users\\JHON PC\\Documents\\GitRepTests\\providers_app\\templates\\provider\\index.html.twig");
     }
 }

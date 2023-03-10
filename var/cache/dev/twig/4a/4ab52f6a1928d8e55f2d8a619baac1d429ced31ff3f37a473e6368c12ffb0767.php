@@ -393,6 +393,6 @@ class __TwigTemplate_fe7df739ebaabd65be2b51c8dcad1ae3b9dad9f773e795d4c4617a31ee4
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\JHON PC\\Documents\\providers-app\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\JHON PC\\Documents\\GitRepTests\\providers_app\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }

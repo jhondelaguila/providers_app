@@ -222,6 +222,6 @@ class __TwigTemplate_60e4308bdd4516654bc88c232c7beb561549f24545aa11d2ea275045b49
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "C:\\Users\\JHON PC\\Documents\\providers-app\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "C:\\Users\\JHON PC\\Documents\\GitRepTests\\providers_app\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.html.twig");
     }
 }

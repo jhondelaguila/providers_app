@@ -953,6 +953,6 @@ class __TwigTemplate_6fba3266be6bedf0dab7fa65986c9b2d4d7a24d77cd27983bed773ba3ba
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "C:\\Users\\JHON PC\\Documents\\providers-app\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "C:\\Users\\JHON PC\\Documents\\GitRepTests\\providers_app\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\config.html.twig");
     }
 }

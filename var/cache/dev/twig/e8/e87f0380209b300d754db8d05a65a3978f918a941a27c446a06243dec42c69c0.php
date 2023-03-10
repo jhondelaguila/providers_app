@@ -143,6 +143,6 @@ class __TwigTemplate_7090b918c6dbea1418957929e6183b65c4b086a13fdb2e4980a48f9edb6
     <p>Última actualización: {{ provider.last_update }}</p>
     <hr>
     <a href=\"/\">Atrás</a>
-{% endblock %}", "provider/show.html.twig", "C:\\Users\\JHON PC\\Documents\\providers-app\\templates\\provider\\show.html.twig");
+{% endblock %}", "provider/show.html.twig", "C:\\Users\\JHON PC\\Documents\\GitRepTests\\providers_app\\templates\\provider\\show.html.twig");
     }
 }

@@ -848,7 +848,7 @@ class __TwigTemplate_d89d284cf23abc4a8b39344f1a9d098e7ac7b4502047b8b9e8003a2a521
             $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "macro", "dump_request_data"));
 
             // line 509
-            $macros["__internal_parse_2"] = $this;
+            $macros["__internal_parse_0"] = $this;
             // line 510
             echo "                {
                     \"id\": \"";
@@ -862,7 +862,7 @@ class __TwigTemplate_d89d284cf23abc4a8b39344f1a9d098e7ac7b4502047b8b9e8003a2a521
                     \"events\": [
 ";
             // line 514
-            echo twig_call_macro($macros["__internal_parse_2"], "macro_dump_events", [(isset($context["events"]) || array_key_exists("events", $context) ? $context["events"] : (function () { throw new RuntimeError('Variable "events" does not exist.', 514, $this->source); })())], 514, $context, $this->getSourceContext());
+            echo twig_call_macro($macros["__internal_parse_0"], "macro_dump_events", [(isset($context["events"]) || array_key_exists("events", $context) ? $context["events"] : (function () { throw new RuntimeError('Variable "events" does not exist.', 514, $this->source); })())], 514, $context, $this->getSourceContext());
             echo "
                     ]
                 }
@@ -1648,6 +1648,6 @@ class __TwigTemplate_d89d284cf23abc4a8b39344f1a9d098e7ac7b4502047b8b9e8003a2a521
         <canvas width=\"680\" height=\"\" id=\"{{ id }}\" class=\"timeline\"></canvas>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "C:\\Users\\JHON PC\\Documents\\providers-app\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "C:\\Users\\JHON PC\\Documents\\GitRepTests\\providers_app\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.html.twig");
     }
 }

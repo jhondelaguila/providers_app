@@ -1,6 +1,6 @@
 DROP DATABASE providers_db;
 use providers_db;
-select * from article;
+select * from provider;
 /*insert into provider (name,email,phone,type,active,date_created,last_update)
 values ('Prooveedor 1','provider1@prov.es','616697045','Hotel',true,'Hoy','Hoy');*/
 /*CREATE TABLE provider(

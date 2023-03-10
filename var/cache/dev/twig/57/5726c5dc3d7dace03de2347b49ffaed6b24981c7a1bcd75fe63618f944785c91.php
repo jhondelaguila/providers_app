@@ -1678,6 +1678,6 @@ class __TwigTemplate_6f2e57f6787ceeea097b8f6f56f509128214f3b0e3a0992cd47e8c3fb9d
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "C:\\Users\\JHON PC\\Documents\\providers-app\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "C:\\Users\\JHON PC\\Documents\\GitRepTests\\providers_app\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
     }
 }
