@@ -2,6 +2,8 @@
     namespace App\Controller;
 
     use App\Entity\Provider;
+    use Doctrine\DBAL\DBALException;
+    use PDOException;
     use Symfony\Component\Form\Extension\Core\Type\EmailType;
     use Symfony\Component\Form\Extension\Core\Type\TelType;
     use Symfony\Component\HttpFoundation\Request;
@@ -89,7 +91,12 @@
                 $provider->setLast_Update(date("d/m/y H:i"));
                 $entityManager = $this->getDoctrine()->getManager();
                 $entityManager->persist($provider);
-                $entityManager->flush();
+                try {
+                    $entityManager->flush();
+                } catch (DBALException $e) {
+                    $this->addFlash('danger', 'No se pudo añadir el proveedor. Recuerda que el nombre, email y teléfono son únicos.');
+                    return $this->redirectToRoute('create_provider');
+                }
 
                 return $this->redirectToRoute('provider_list');
             }

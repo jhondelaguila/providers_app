@@ -5,11 +5,11 @@ select * from provider;
 values ('Prooveedor 1','provider1@prov.es','616697045','Hotel',true,'Hoy','Hoy');*/
 /*CREATE TABLE provider(
 	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50) UNIQUE,
-	email VARCHAR(100) UNIQUE,
-	phone VARCHAR(10),
+	name VARCHAR(50) NOT NULL UNIQUE,
+	email VARCHAR(100) NOT NULL UNIQUE,
+	phone VARCHAR(10) NOT NULL UNIQUE,
 	type ENUM('Hotel','Pista','Complemento'),
-	active BOOLEAN DEFAULT FALSE,
-	date_created DATETIME,
+	active NOT NULL BOOLEAN DEFAULT FALSE,
+	date_created DATETIME NOT NULL,
 	last_update DATETIME
 );*/

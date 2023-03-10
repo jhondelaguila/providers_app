@@ -98,7 +98,39 @@ class __TwigTemplate_eb177467b76ae2cbcd5a34f71662cc78b7602a99c04be43903d9c754663
         echo "
     <hr>
     <a href=\"/\">Atrás</a>
-";
+    ";
+        // line 11
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "flashes", [], "any", false, false, false, 11));
+        foreach ($context['_seq'] as $context["type"] => $context["messages"]) {
+            // line 12
+            echo "        ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($context["messages"]);
+            foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+                // line 13
+                echo "            <div class=\"alert alert-";
+                echo twig_escape_filter($this->env, $context["type"], "html", null, true);
+                echo " alert-dismissible fade show\" role=\"alert\">
+                ";
+                // line 14
+                echo twig_escape_filter($this->env, $context["message"], "html", null, true);
+                echo "
+                <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Cerrar\">
+                    <span aria-hidden=\"true\">&times;</span>
+                </button>
+            </div>
+        ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 20
+            echo "    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['type'], $context['messages'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -119,7 +151,7 @@ class __TwigTemplate_eb177467b76ae2cbcd5a34f71662cc78b7602a99c04be43903d9c754663
 
     public function getDebugInfo()
     {
-        return array (  97 => 8,  93 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  129 => 20,  117 => 14,  112 => 13,  107 => 12,  103 => 11,  97 => 8,  93 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -134,6 +166,16 @@ class __TwigTemplate_eb177467b76ae2cbcd5a34f71662cc78b7602a99c04be43903d9c754663
     {{ form_end(form) }}
     <hr>
     <a href=\"/\">Atrás</a>
+    {% for type, messages in app.flashes %}
+        {% for message in messages %}
+            <div class=\"alert alert-{{ type }} alert-dismissible fade show\" role=\"alert\">
+                {{ message }}
+                <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Cerrar\">
+                    <span aria-hidden=\"true\">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+    {% endfor %}
 {% endblock %}", "provider/create.html.twig", "C:\\Users\\JHON PC\\Documents\\GitRepTests\\providers_app\\templates\\provider\\create.html.twig");
     }
 }

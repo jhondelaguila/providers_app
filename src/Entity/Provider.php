@@ -17,37 +17,37 @@ class Provider
     private $id;
 
     /**
-     * @ORM\Column(type="text", length=50)
+     * @ORM\Column(type="string", length=50, unique=true, nullable=false)
      */
     private $name;
 
     /**
-     * @ORM\Column(type="text", length=100)
+     * @ORM\Column(type="string", length=100, unique=true, nullable=false)
      */
     private $email;
 
     /**
-     * @ORM\Column(type="text", length=10)
+     * @ORM\Column(type="string", length=10, unique=true, nullable=false)
      */
     private $phone;
 
     /**
-     * @ORM\Column(type="string", columnDefinition="ENUM('Pista', 'Hotel','Complemento')")
+     * @ORM\Column(type="string", columnDefinition="ENUM('Pista', 'Hotel','Complemento')", nullable=false)
      */
     private $type;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="boolean", nullable=false)
      */
     private $active;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $date_created;
 
     /**
-     * @ORM\Column(type="text", nullable=true)
+     * @ORM\Column(type="string", nullable=true)
      */
     private $last_update;
 
