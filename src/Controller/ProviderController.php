@@ -108,7 +108,7 @@
 
         /**
          * @Route("/provider/edit/{id}", name="edit_provider")
-         * @Method ({"GET","POST"})
+         * @Method ({"POST"})
          */
         public function editProvider(Request $request, $id){
             $provider = new Provider();
@@ -161,6 +161,7 @@
 
         /**
          * @Route("/provider/{id}", name="provider_show")
+         * @Method ({"GET"})
          */
         public function showProvider($id){
             $provider = $this->getDoctrine()->getRepository(Provider::class)->find($id);
