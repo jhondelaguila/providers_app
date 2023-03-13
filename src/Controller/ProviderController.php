@@ -172,7 +172,7 @@
          * @Route("/provider/delete/{id}")
          * @Method ({"DELETE"})
          */
-        public function deleteProvider(Request $request, $id){
+        public function deleteProvider($id){
             $provider = $this->getDoctrine()->getRepository(Provider::class)->find($id);
 
             $entityManager = $this->getDoctrine()->getManager();
